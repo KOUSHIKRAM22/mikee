@@ -1,0 +1,16 @@
+Docker week-8
+
+sudo su
+sudo yum update -y
+sudo yum install docker -y
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+docker --version
+docker pull tensorflow/tensorflow 
+
+docker images 
+docker run -d -p 8080:8080 tensorflow/tensorflow
+
+docker ps -a
